@@ -1,0 +1,90 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+svg {
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woman {
+    width: 600px;
+    position: relative;
+}
+
+@keyframes rotatewoman {
+    from {transform:rotate(0deg)}
+    to {transform: rotate(360deg);}
+}
+
+.aura {
+    transform-origin: center;
+    animation: 4s linear rotatewoman infinite;
+}
+
+.chakra {
+    position: absolute;
+    left: 48.3%;
+    width: 3.5%;
+    height: 3.5%;
+}
+
+.chakra--purple {
+    top: 23%;
+}
+.chakra--purple:hover {
+    box-shadow: 0 4px 16px #f067f0;
+    transition: all 0.2s ease;
+}
+
+.chakra--indigo {
+    top: 32%;
+}
+.chakra--indigo:hover {
+    box-shadow: 0 4px 16px #c687f3;
+    transition: all 0.2s ease;
+}
+
+.chakra--blue {
+    top: 38%;
+}
+.chakra--blue:hover {
+    box-shadow: 0 4px 16px #9292ff;
+    transition: all 0.2s ease;
+}
+
+.chakra--green {
+    top: 44%;
+}
+.chakra--green:hover {
+    box-shadow: 0 4px 16px #6cff6c;
+    transition: all 0.2s ease;
+}
+
+.chakra--yellow {
+    top: 49%;
+}
+.chakra--yellow:hover {
+    box-shadow: 0 4px 16px #ffff4c;
+    transition: all 0.2s ease;
+}
+
+.chakra--orange {
+    top: 54%;
+}
+.chakra--orange:hover {
+    box-shadow: 0 4px 16px #ffc862;
+    transition: all 0.2s ease;
+}
+
+.chakra--red {
+    top: 60%;
+}
+.chakra--red:hover {
+    box-shadow: 0 4px 16px #ff5c5c;
+    transition: all 0.2s ease;
+}

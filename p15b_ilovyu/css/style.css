@@ -1,0 +1,140 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+img {
+    width: 100%;
+}
+
+.container {
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 800;
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(to left, rgb(240, 240, 132) 25%,rgb(238, 140, 91) 25% 50%,rgb(229, 102, 134) 50% 75%,rgb(202, 63, 111) 75%);
+}
+
+.header {
+    display: flex;
+    background-color: rgb(255, 251, 248);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.header__left, .header__rigth {
+    flex-basis: 50%;
+    font-size: 1.4rem;
+    color: rgb(227, 131, 34);
+}
+
+.header__rigth {
+    font-size: 14px;
+}
+
+.header__left {
+    font-family: 'Lilita One', sans-serif;
+}
+
+.header__title-buttom {
+    display: flex;
+    color: #ff0095;
+}
+
+.header__heart-img {
+    width: 22px;
+    transform: translate(-50%, -46%);
+
+}
+
+section {
+    padding: 20px;
+    font-size: 10px;
+    border-collapse: collapse;
+}
+
+header div {
+    margin: 15px;
+}
+
+section div {
+    display: flex;
+    background-color: ghostwhite;
+    border-style: dashed; 
+    border-width: 4px;
+    border-radius: 20px;
+    border-color: blue;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.frases__primero p:nth-child(odd) {
+	color: #155ad2; 
+}
+.frases__primero p:nth-child(even) {
+	color: #da1c85;
+}
+
+.frases__segundo p:nth-child(odd) {
+    color: #da1c85;
+}
+.frases__segundo p:nth-child(even) {
+    color: #155ad2; 
+}
+
+.frases__tercero p:nth-child(odd) {
+	color: #155ad2; 
+}
+.frases__tercero p:nth-child(even) {
+	color: #da1c85;
+}
+
+.frases__cuarto p:nth-child(odd) {
+    color: #da1c85;
+}
+.frases__cuarto p:nth-child(even) {
+    color: #155ad2; 
+}
+
+.frases__quinto p:nth-child(odd) {
+	color: #155ad2; 
+}
+.frases__quinto p:nth-child(even) {
+	color: #da1c85;
+}
+
+p {
+    margin-left: 30px;
+}
+
+.frases {
+    position: relative;
+}
+
+.corazones__uno {
+    position: absolute;
+    width: 40px;
+    top: 15%;
+    left: 20%;
+}
+
+.corazones__dos {
+    position: absolute;
+    width: 40px;
+    top: 50%;
+    left: 45%;
+}
+
+.corazones__tres {
+    position: absolute;
+    width: 40px;
+    top: 80%;
+    left: 52%;
+}
+
+.corazones__cuatro {
+    position: absolute;
+    width: 40px;
+    top: 30%;
+    left: 70%;
+}

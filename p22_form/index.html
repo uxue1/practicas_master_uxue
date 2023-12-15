@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/fun.js" defer></script>
+    <title>Formulario GYM</title>
+</head>
+<body>
+    <form action="form_recive.php" name="usuario_wp" enctype="application/x-www-form-urlencoded" method="post"></form>
+
+        <p class="formulario">Formulario de Admisión Gimnasio</p>
+
+        <!--2-->
+        <label for="nameSurnameImput">Introduce tu nombre</label>
+        <input type="text" id="nameSurnameImput" name="user_nameSurname" size="20" maxlength="4">
+
+        <!--3-->
+        <fieldset class="datos">
+            <label for="mindInput">Mayor de 18</label>
+            <input type="checkbox" name="user_mainok" id="age18Input" checked>
+    
+            <label for="mindInput">Sin problemas de corazón</label>
+            <input type="checkbox" name="user_mainok" id="mindInput">
+
+            <label for="mindInput">En pleno uso de mis facultades</label>
+            <input type="checkbox" name="user_mainok" id="mindInput">
+        </fieldset>
+
+        <!--4-->
+        <fieldset class="sexo">
+            <legend>Sexo</legend>
+            <label for="manInput">Hombre</label>
+            <input type="radio" name="user_sex" id="manInput" class="user_sex">
+            <label for="womnaInput">Mujer</label>
+            <input type="radio" name="user_sex" id="womnaInput" class="user_sex">
+            <label for="otherInput">Otro</label>
+            <input type="radio" name="user_sex" id="otherInput" class="user_sex">
+        </fieldset>
+
+        <!--5-->
+        <label for="memberTypeInput">Elige tu deporte</label>
+        <select name="user_level" id="memberTypeInput">
+            <option value="Crossfit">Crossfit</option>
+            <option value="Spining"selected>Spinning</option>
+            <option value="Kung Fu">Kung Fu</option>
+        </select>
+
+        <!--6-->
+        <label for="comentsInput">Comentarios</label>
+        <textarea name="user_coments" id="comentsInput" placeholder="comentarios" cols="30" rows="10"></textarea>
+
+        <!--8-->
+        <label for="pudInput">Password</label>
+        <input type="password" class="password" id="pudInput">
+        <div class="eye">
+            <img src="vectores/eye open.svg" alt="">
+        </div>
+    </form>
+</body>
+</html>

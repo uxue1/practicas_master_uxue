@@ -1,0 +1,195 @@
+* {padding: 0; margin:0; box-sizing: border-box;}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Bebas Neue', sans-serif;}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    width: 100%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.header, .footer {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+/*HEADER*/
+.header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+
+.header__menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.header__menu--item {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.header__logo, .footer__logo {
+    flex-basis: 2.8rem;
+    min-width: 2.8rem;
+    margin: 0 3em;
+}
+
+.image {
+    display: block;
+    height: 100%;
+}
+
+.image__moon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*WE ARE MOON*/
+.wearemoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+.wearemoon__text {
+    margin-top: 2em;
+    column-count: 3;
+    margin-top: 20px;
+}
+
+/*STYLES*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(1px, 49vw),1fr));
+    font-size: 3rem;
+}
+
+.container__cuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container__cuadrado:hover {
+    filter: saturate(300%);
+}
+
+.container__cuadrado--blue {
+    background-color: #2a295f;
+}
+
+.container__cuadrado--pink {
+    background-color: #d87093;
+}
+
+/*PURE MUSIC*/
+.puremusic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.puremusic__left {
+    padding-top: 60px;
+}
+
+.puremusic__rigth {
+    padding-left: 25px;
+}
+
+.puremusic__rigth--text {
+    padding-top: 25px;
+}
+
+/*BEST PARTNER*/
+.twisted-bar__container {
+    padding-top:20px;
+    box-sizing: border-box;
+    clip-path: polygon(0% 0%, 100% 100px, 100% 100%, 0% 100%);
+    background-color: black;
+}
+
+.twisted-bar__container-in {
+    position: relative;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 100px, 100% 100%, 0% 100%);
+}
+
+.bestmusic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    padding: 144px;
+    gap: 5em;
+}
+
+.bestmusic__left {
+
+    flex-basis: 80%;
+    display: flex;
+}
+
+.bestmusic__rigth {
+    flex-basis: 20%;
+}
+
+.bestmusic__left--text {
+    padding-top: 70px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1a193a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 6em 2.5em 3em 2.5em;
+    font-size: 1.5rem;
+    clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.footer__all {
+    display: flex;
+}
+
+.footer__menu {
+    list-style: none;
+    padding: 1em;
+}

@@ -1,0 +1,102 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+header {
+    font-weight: 800;
+    font-size: 44px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #555;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #504b4b;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+header span{
+    cursor: pointer;
+}
+
+header span:first-child:hover {
+    color: magenta;
+}
+
+header span:nth-child(2):hover {
+    color: yellow;
+}
+
+header span:last-child:hover {
+    color: cyan;
+}
+
+header span:nth-child(2)::before {
+    content: "|";
+    margin-right: 17px;
+}
+
+header span:nth-child(2)::after {
+    content: "|";
+    margin-left: 17px;
+}
+
+header span:hover::before, header span:hover::after{
+    color: #ffffff;
+}
+
+
+
+section div p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section div div {
+    height: 80px; 
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+section div:first-child div {
+    background-color: cyan;
+    width: 80%;
+}
+
+section div:nth-child(2) div {
+    background-color: magenta;
+    width: 70%;
+}
+
+section div:last-child div {
+    background-color: yellow;
+    width: 90%;
+}
+
+section div div:hover {
+    background-color: white;
+}
+
+
+
+
+footer div {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+}
