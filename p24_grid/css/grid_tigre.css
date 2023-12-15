@@ -1,0 +1,62 @@
+* {padding: 0; margin:0; box-sizing: border-box;}
+        
+        body {
+            background-color: black;
+            padding: 10px;
+        }
+
+        .photo__container {
+            width: 100%;
+            height: 104vh;
+            background-image: url("../img/tigre-caminando.jpg");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            mix-blend-mode: darken;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .grid__container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 0.5fr;
+            gap: 10px;
+            justify-content: stretch;
+            align-content: stretch;
+        }
+
+        .grid__item {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid__item:hover {
+            mix-blend-mode: difference;
+            background-color: black !important;
+            cursor: pointer;
+        }
+
+        .grid__item--2 {
+            grid-row: span 3;
+            grid-column: span 2;
+        }
+
+        .grid__item--5 {
+            grid-row: span 2;
+        }
+
+        .grid__item--9 {
+            grid-column: span 2;
+        }
+
+        .grid__item--16 {
+            grid-column: span 2;
+        }

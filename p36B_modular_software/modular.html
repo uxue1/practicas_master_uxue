@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .padd {
+            padding: 40px;
+        }
+        .bc-red {
+            background-color: red;
+        }
+        .border-2 {
+            border: 2px solid black;
+        }
+    </style>
+    <div><img src="https://picsum.photos/200/300" alt="foto random" title="foto aleatoria"><div>
+        <button class="btn1">CLICK ME</button>
+        
+        <script>
+            //capturar objetos
+            const btn1 = document.querySelector('.btn1');
+            const captureObj = document.querySelector('div');
+            const imgCapt = document.querySelector('[alt="foto random"]')
+            const inputText = document.querySelector('input');
+
+            //definir funciones
+            function divChanger(obj) {
+                obj.classList.add('padd-40');
+                obj.classList.add('bc-red');
+                obj.classList.add('border-2');
+            }
+
+            //lanzar el evento y dentro invocar la funcion
+            btn1.addEventListener('click', function(){
+                divChanger(captureObj);
+                imgCapt.setAttribute('tittle','tittle cambiador por JS');
+                imgCapt.removeAttribute('alt');
+                //el valor por defecto
+                imgCapt.setAttribute('src', 'https://www.pexels.com/es-es/foto/cielo-edificio-campo-arbol-12982035/')
+                //el valor dinamico
+                imgCapt.src = 'https://www.pexels.com/es-es/foto/cielo-edificio-campo-arbol-12982035/';
+
+                console.log(inputText.value);
+                console.log(inputText.getAttribute('value'));
+
+            })
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>

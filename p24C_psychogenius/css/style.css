@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+    min-height: 100vh;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.photo_container, .photo_container-back {
+    width: 115.39px;
+    height: 115.39px;
+    background-image: url("../img/mcenroe.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0);
+}
+
+.photo_container {
+    -webkit-background-clip: text;
+    z-index: 1;
+}
+
+.back {
+    position: absolute;
+    top: 10px;
+    left: 202px;
+}
+.photo_container--1 {
+    background-color: rgb(0%, 60%, 70%);
+    background-blend-mode: luminosity;
+}
+
+.photo_container--2 {
+    background-color: #0077FF;
+    background-blend-mode: luminosity;
+}
+
+.photo_container--3 {
+    background-color: #0077BF;
+    background-blend-mode: luminosity;
+}
+
+.photo_container--4 {
+    background-color: #04FF00;
+    background-blend-mode: luminosity;
+}
+
+.photo_container--5 {
+    background-color: #CCFF00;
+    background-blend-mode: luminosity;
+}
+
+.photo_container--6 {
+    background-color: #FF6A00;
+    background-blend-mode: luminosity;
+}
+.grid {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.5fr 2fr 3fr 2fr 1.5fr 1fr 0.5fr;            
+}
+
+.grid__item {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}

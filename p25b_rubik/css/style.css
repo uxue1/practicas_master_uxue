@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1800px;
+    perspective-origin: 50% -50%;
+    position: relative;
+
+}
+
+.cube {
+    perspective: 900px;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+}
+
+.cube__side {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: bla;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.cube__side__red {
+    height: 191px;
+    width: 200px;
+    transform: translateY(-6px) translateX(-62px) rotateY(310deg);
+}
+.cube__side--item {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.cube__side--item:hover {
+    border: 3px solid rgb(0, 255, 255);
+}
+
+.cube__side--red {
+    background-color: red;
+}
+
+.cube__side__blue {
+    height: 200px;
+    width: 200px;
+    transform: translateX(89px) rotateY(30deg);
+}
+.cube__side--blue {
+    background-color: blue;           
+}
+
+.cube__side__green {
+    height: 192px;
+    width: 192px;
+    transform: translateX(21px) translateY(-115px) rotateX(91deg) rotateZ(52.5deg);
+}
+.cube__side--green {
+    background-color: green;
+}

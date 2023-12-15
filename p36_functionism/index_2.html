@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button">LANZAR MONEDA</button>
+    <div class="result"></div>
+
+    <script>
+        //capturar
+        const button = document.querySelector('button');
+        const result = document.querySelector('.result');
+
+        //determinar la funcion
+        button.addEventListener('click', lanzarMoneda);
+
+        //funcion
+        var contador = 0;
+        function lanzarMoneda() {
+            contador = contador +1;
+            let resultado = ""
+            if(contador > 3) { return result.innerHTML = "no tientes a tu suerte"}
+            
+            return result.innerHTML = (Math.floor(Math.random()*2)%2) == "0" ? "cara" : "cruz"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="photo_container photo_container--1">G</div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="photo_container photo_container--2">E</div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="photo_container photo_container--3">N</div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="photo_container photo_container--4">I</div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="photo_container photo_container--5">U</div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="photo_container photo_container--6">S</div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+        <div class="class grid__item"></div>
+    
+    </div>
+    <div class="back">
+        <div class="photo_container-back photo_container--1">G</div>
+        <div class="photo_container-back photo_container--2">E</div>
+        <div class="photo_container-back photo_container--3">N</div>
+        <div class="photo_container-back photo_container--4">I</div>
+        <div class="photo_container-back photo_container--5">U</div>
+        <div class="photo_container-back photo_container--6">S</div>
+    </div>
+
+    
+    <script>
+        const flexItems = document.querySelectorAll('.grid__item');
+        flexItems.forEach((flexItem,index) => {
+            const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+            flexItem.style.background = color;
+        });  
+    </script>
+</body>
+</html>

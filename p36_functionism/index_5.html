@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        /*si el objeto crece no se actualiza. Esta harcodeado
+        const myObject = {
+            prop1: "super",
+            prop2: "cali",
+            prop3: "fragi",
+            prop4: "listi",
+            concatenar: function(){
+                return this.prop1 + this.prop2 + this.prop3 + this.prop4;
+            }
+        }*/
+
+        //Hacer el codigo escalable. cuando se añaden más propiedades se añaden. Con el if lo que se hace el que coja todas la spropiedades menos la que es diferente === tipo y dato iguales
+        const myObject = {
+            prop1: "super",
+            prop2: "cali",
+            prop3: "fragi",
+            prop4: "listicoespialidoso",
+            concatenar: function(){
+                let all = "";
+                Object.values(this).forEach((item)=>{
+                    if (typeof item === "string") all += item;
+                })
+
+                return all;
+            }
+        }
+
+        console.log(myObject.concatenar());
+    </script>
+</body>
+</html>

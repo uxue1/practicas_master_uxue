@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buttons">
+        <button value="copy" class="buttons__button buttons__button--copy">copy</button>
+        <button value="delete" class="buttons__button buttons__button--delete">delete</button>
+        <button value="insert" class="buttons__button buttons__button--insert text">insert text</button>
+    </div>
+
+    <p class="dom-item">Holi, soy un elemento dom solitario</p>
+
+    <script>
+        //capturamos el contenedor de los botones
+        const buttons = document.querySelector('.buttons');
+
+        //creamos addeventlistener sobre el contenedor de botones. Cuando hay amuchos botones
+        buttons.addEventListener('click', function(e){
+            const domItem = document.querySelector('.dom-item');
+
+            clickOnElements(domItem, e.target.value);
+        });
+
+        function clickOnElements(domElement, action){
+
+            if (action === "delete"){
+                domElement.remove();
+            }
+            else if (action === "copy"){
+                document.body.appendChild(domElement.cloneNode(true));
+            }
+            else if (action === "insert"){
+                domElement.innerHTML = "texto generado por js";
+            }
+            else {
+                console.log("no existe esa acción");
+            }
+        }
+    </script>
+</body>
+</html>

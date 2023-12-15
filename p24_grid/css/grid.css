@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+.grid__container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    gap: 10px;
+    justify-content: stretch;
+    align-content: stretch;
+}
+
+.grid__item {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__item--2 {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.grid__item--5 {
+    grid-row: span 2;
+}
+
+.grid__item--9 {
+    grid-column: span 2;
+}
+
+.grid__item--16 {
+    grid-column: span 2;
+}
+
+.grid__item--22 {
+    justify-self: flex-end;
+}
+
+.grid__item--23 {
+    align-self: flex-end;
+}
+
+.grid__item--24 {
+    place-self: end;
+}
