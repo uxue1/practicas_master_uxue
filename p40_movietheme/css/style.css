@@ -1,0 +1,56 @@
+* { padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+    color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.ranking {
+    background-color: rgb(10, 12, 47);
+    min-height: 100vh;
+}
+
+.ranking__title {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Slackey', sans-serif;
+    color: white;
+}
+
+.ranking__photo-container {
+    max-width: 100px;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.ranking__artist-item {
+    border: 4px solid rgb(99, 99, 197);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.ranking__data-container {
+    margin-left: 10px;
+}
+
+.ranking1 {
+    border: 4px solid white;
+}
+
+.ranking2 {
+    border: 4px solid red;
+}
+
+.ranking3 {
+    border: 4px solid green;
+}
+
+.ranking4 {
+    border: 4px solid yellow;
+}
