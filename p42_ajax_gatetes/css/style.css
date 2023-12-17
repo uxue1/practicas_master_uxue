@@ -1,0 +1,7 @@
+img { width: 100%; display: block; object-fit: cover; height: 100%;}
+
+.grid_gatetes {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,200px);
+}

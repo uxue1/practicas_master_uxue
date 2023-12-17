@@ -1,0 +1,14 @@
+.crono__slot {
+    display: flex;
+    margin-bottom: 10px;
+}
+.crono__seconds, .crono__miliseconds {
+    padding: 20px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+}
+
+.crono__buttons {
+    cursor: pointer;
+}
